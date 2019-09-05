@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<style>
+	input {
+		outline: #07380E;
+		border: double;
+		color: #150909;
+		background-color: #6EBB4D;
+		border-radius: 170px;
+		width: 110px;
+		height: 80px;
+		float: inherit;
+		font-size: 20px;
+		padding: 1px;
+		margin: 3px
+	
+	}
+
+</style>
+<meta charset="UTF-8">
+<title>hmTl.Calculator</title>
+</head>
+
+
+<body>
+<form name="calculator">
+
+<div id="myCalculator"></div>
+
+<div id="top_display">
+<input type="text" name="display" disabled>
+</div>
+<div class="inputRow">
+<input type="button" name="one" value="1" onclick="calculator.display.value +='1'">
+<input type="button" name="two" value="2" onclick="calculator.display.value +='2'">
+<input type="button" name="three" value="3" onclick="calculator.display.value +='3'">
+<input type="button" name="zero" value="0" onclick="calculator.display.value = '0'">
+	</div>
+<div class="inputRow">
+<input type="button" name="four" value="4" onclick="calculator.display.value +='4'">
+<input type="button" name="five" value="5" onclick="calculator.display.value +='5'">
+<input type="button" name="six" value="6" onclick="calculator.display.value +='6'">
+<input type="button" class="operator" name="times" value="x" onclick="calculator.display.value += '*'">
+	</div>
+<div class="inputRow">
+<input type="button" name="seven" value="7" onclick="calculator.display.value +='7'">
+<input type="button" name="eight" value="8" onclick="calculator.display.value +='8'">
+<input type="button" name="nine" value="9" onclick="calculator.display.value +='9'">
+<input type="button" class="operator" name="div" value="/" onclick="calculator.display.value += '/'">
+</div>
+<div class="inptField">
+</div> 
+<input type="button" class="operator" name="add" value="+" onclick="calculator.display.value +='+'">
+<input type="button" class="operator" name="equals" value="=" onclick="calculator.display.value= eval(calculator.display.value)">
+<input type="button" class="operator" name="subtract" value="-" onclick="calculator.display.value +='-'">
+<input type="button" id="clear" name="clear" value="c" onclick="calculator.display.value = ''">
+</form>
+</body>
+</html>
