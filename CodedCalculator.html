@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<style>
+body{
+	background-color: #ffc023;
+}
+#calculator{
+	width: 320px;
+	height: 520px;
+	background-color: #ffc023;
+	margin: 0 auto;
+	top: 20px;
+	position: relative;
+	border-radius: 12px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#result{
+	height: 120px;
+	background-color: #b3b3b3;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px
+}
+#history{
+	text-align: right;
+	height: 20px;
+	margin: 20px;
+	padding-top: 20px;
+	font-size: 15px;
+	color: black;
+}
+#output{
+	text-align: right;
+	height: 60px;
+	margin: 10px 20px;
+	font-size: 30px;
+	color: black;
+}
+#keyboard{
+	height: 400px;
+}
+.operator, .number{
+	width: 50px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	height: 100px;
+	width: 80px;
+	float: left;
+	border-radius: 0%;
+	border-width: 0px;
+	font-weight: bold;
+	font-size: 32px;
+	padding-bottom: auto;ding right: auto;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	margin-top: auto;
+}
+.number{
+	background-color:#ffc023;;
+}
+	.operator
+	{background-color: #ffc023;
+	height: 
+	}
+button:nth-child(16){
+	font-size: 32px;
+	border-bottom-right-radius: 12px;
+	}
+	button:nth-child(1):hover{
+		background-color: #dd8a8a		
+	}
+	button:nth-child(2):hover{
+		background-color: #de7d7d		
+	}
+	button:nth-child(3):hover{
+		background-color: #e07070		
+	}
+	button:nth-child(4):hover{
+		background-color: #e16262		
+	}
+	button:nth-child(5):hover{
+		background-color: #f7893f		
+	}
+	button:nth-child(6):hover{
+		background-color: #f87924		
+	}
+	button:nth-child(7):hover{
+		background-color: #f96908		
+	}
+	button:nth-child(8):hover{
+		background-color: #e35555		
+	}
+	button:nth-child(9):hover{
+		background-color: #f6914d		
+	}
+	button:nth-child(10):hover{
+		background-color: #f7893f		
+	}
+	button:nth-child(11):hover{
+		background-color: #f87924		
+	}
+	button:nth-child(12):hover{
+		background-color: #e63b3b		
+	}
+	button:nth-child(13):hover{
+		background-color: #f5a168		
+	}
+	button:nth-child(14):hover{
+		background-color: #f6914d		
+	}
+	button:nth-child(15):hover{
+		background-color: #f7893f		
+	}
+	button:nth-child(16):hover{
+		background-color: #d80524		
+	}
+button:nth-child(13){
+	font-size: 32px;
+	border-bottom-left-radius: 12px;
+	}
+</style>
+<script>
+function getHistory(){
+	return document.getElementById("history-value").innerText;
+}
+function printHistory(num){
+	document.getElementById("history-value").innerText=num;
+}
+function getOutput(){
+	return document.getElementById("output-value").innerText;
+}
+function printOutput(num){
+	if(num==""){
+		document.getElementById("output-value").innerText=num;
+	}
+	else{
+		document.getElementById("output-value").innerText=getFormattedNumber(num);
+	}	
+</script>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+<body>
+<html>
+	<head>
+		<title>A simple calculator</title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="calculator">
+				<div id="result">
+					<div id="history">
+					</div>
+					<div id="output">
+						<p id="output-value"></p>
+					</div>
+				</div>
+				<div id="keyboard">
+						<button class="operator" id="=">=</button>
+						<button class="operator" id="-">-</button>
+						<button class="operator" id="+">+</button>
+						<button class="number" id="0">0</button>
+						<button class="number" id="1">1</button>
+						<button class="number" id="2">2</button>
+						<button class="number" id="3">3</button>	
+						<button class="operator" id="*">&times;</button>
+						<button class="number" id="4">4</button>
+						<button class="number" id="5">5</button>
+						<button class="number" id="6">6</button>	
+						<button class="operator" id="/">&#247;</button>
+						<button class="number" id="7">7</button>
+						<button class="number" id="8">8</button>
+						<button class="number" id="9">9</button>
+						<button class="operator" id="clear">C</button>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
+
+</body>
+</html>
