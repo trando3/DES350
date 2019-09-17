@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<style>
+	form{background-color: #ffc023;
+		height: 1000px
+	}
+	input{ outline: #07380E;
+		border: 0px;
+		color: #150909;
+		background-color: #ffc023;
+		border-radius: 0px;
+		width: 80.3px;
+		height: 102px;
+		float: auto;
+		font-size:40px;
+		padding: -1px;
+		margin: 1px;
+		margin-bottom: -1px;
+		margin-left: -1px;
+		margin-right: -3px;
+		}
+	
+	#top_display{
+background-color: #999999;
+	margin: 0 auto;
+	top: 20px;
+	float: inherit;
+	width: 320px;
+	height: 120px;
+	float: inherit;
+	margin-bottom: -1;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	}
+	#myCalculator{
+	width: 320px;
+	height: 520px;
+	background-color: #ffc023;
+	margin: 0 auto;
+	top: 20px;
+	position: center;
+	border-radius: 30px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	.class1{}
+	.class2{}
+	.class3{}
+	.class4{}
+	.class5{}
+	.class6{}
+	.class7{
+		border-bottom-left-radius: 30px;
+	}
+	.class8{}
+	.class9{}
+	.classc{
+		border-bottom-right-radius: 30px;
+	}
+	
+.classI { 
+	width: 320px;
+	height: 90px;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	background-color: #999999;
+	outline-color: #999999;
+	border: 0px;
+	text-align: center;
+	font-size: 60px;
+	color: black;
+	margin-bottom: auto;
+	color: black;
+	
+}
+</style>
+<meta charset="UTF-8">
+<title>hmTl.Calculator</title>
+<body>
+<form name="calculator">
+
+<div id="myCalculator">
+<div id="top_display">
+	
+<input name="display" type="text" disabled class="classI">
+	</div>
+<input type="button" class="operator class+" name="equals" value="=" onclick="calculator.display.value= eval(calculator.display.value)">
+<input type="button" class="operator" name="add" value="+" onclick="calculator.display.value +='+'">
+<input type="button" class="operator class-" name="subtract" value="-" onclick="calculator.display.value +='-'">
+<input name="zero" type="button" class="class0" onclick="calculator.display.value = '0'" value="0">
+<input name="one" type="button" class="class1" onclick="calculator.display.value +='1'" value="1">
+<input name="two" type="button" class="class2" onclick="calculator.display.value +='2'" value="2">
+<input name="three" type="button" class="class3" onclick="calculator.display.value +='3'" value="3">
+<input type="button" class="operator classx" name="times" value="x" onclick="calculator.display.value += '*'">
+<input name="four" type="button" class="class4" onclick="calculator.display.value +='4'" value="4">
+<input name="five" type="button" class="class5" onclick="calculator.display.value +='5'" value="5">
+<input name="six" type="button" class="class6" onclick="calculator.display.value +='6'" value="6">
+<input name="div" type="button" class="class/" onclick="calculator.display.value += '/'" value="/">
+<input name="seven" type="button" class="class7" onclick="calculator.display.value +='7'" value="7">
+<input name="eight" type="button" class="class8" onclick="calculator.display.value +='8'" value="8">
+<input name="nine" type="button" class="class9" onclick="calculator.display.value +='9'" value="9">
+<input name="clear" type="button" class="classc" id="clear" onclick="calculator.display.value = ''" value="C">
+</div>
+</form>
+</body>
+</html>
