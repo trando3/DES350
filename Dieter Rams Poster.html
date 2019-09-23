@@ -1,0 +1,509 @@
+<!doctype html>
+<html>
+<style>
+	#Space{
+		height: 1400.5px;
+		width: 900px;
+		background: #bfbbbb;
+		margin: 0 auto;
+		border-radius: 10px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		display: block;
+        position: relative; left: 0%; top: 4%;
+	}
+	form{
+		background: #bfbbbb;
+		margin:  4 auto;
+		height: 1500px;
+	}
+	body{
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";}
+	
+	p{
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: justify;
+	position: absolute; right:-100px; top: -1140px;
+	}
+	p2{
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: justify;
+	position: absolute; right:170px; top: -1050px;
+	}
+	p3{
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: justify;
+	position: absolute; right:450px; top: -1080px;
+	}
+	p4{
+  padding: 10px;
+  width: 190px;
+  height:200px;
+  text-align: justify;
+	position: absolute; right:400px; top: -720px;
+	}
+	p5{
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: justify;
+	position: absolute; right:119px; top: -700px;
+	}
+	p6{
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: justify;
+	position: absolute; right:-180px; top: -764px;
+	}
+	p7{
+  padding: 10px;
+  width: 189px;
+  height: 200px;
+  text-align: justify;
+	position: absolute; right:-190px; top: -370px;
+		font-size: 14px;
+	}
+		p9{
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: justify;
+			position: absolute; right:260px; top: -324px;}
+	p8{
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: justify;
+	position: absolute; right:23px; top: -443px;
+		font-size: 15.4px;
+	}
+	p10{
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: justify;
+	position: absolute; right:490px; top:-420px;
+	}
+	p11{
+  padding: 10px;
+  width: 500px;
+  height: 200px;
+  text-align: justify;
+		position: absolute; right:-120px; top: -150px;}
+	h1{
+		color: #f40808;
+		font-size: 150px;
+		position: absolute; left:50px; top: -1000px;
+  opacity: 0.5;
+  filter: Alpha(opacity=50); /* IE8 and earlier */
+	}
+	h2{
+		color: #f40808;
+		font-size: 150px;
+		position: absolute; right:130px; top: -1300px;
+		opacity: 0.5;
+  filter: Alpha(opacity=50); /* IE8 and earlier */
+	}
+	h3{
+		color: #f40808;
+		font-size: 150px;
+		position: absolute; right:400px; top: -1100px;
+		opacity: 0.5;
+  filter: Alpha(opacity=50); /* IE8 and earlier */
+	}
+	h4{
+		color: #f40808;
+		font-size: 150px;
+		position: absolute; right:560px; top: -840px;
+		opacity: 0.5;
+  filter: Alpha(opacity=50); /* IE8 and earlier */
+	}
+	h5{
+		color: #f40808;
+		font-size: 150px;
+		position: absolute; right:330px; top: -1000px;
+		opacity: 0.5;
+  filter: Alpha(opacity=50); /* IE8 and earlier */
+	}
+	h6{
+		color: #f40808;
+		font-size: 150px;
+		position: absolute; right: 33px; top: -1000px;
+		opacity: 0.5;
+  filter: Alpha(opacity=50); /* IE8 and earlier */
+	}
+	h7{
+		color: #f40808;
+		font-size: 150px;
+		position: absolute; left:100px; top: -480px;
+		opacity: 0.5;
+  filter: Alpha(opacity=50); /* IE8 and earlier */
+	}
+	h8{
+		color: #f40808;
+		font-size: 150px;
+		position: absolute; right:3px; top: -350px;
+		opacity: 0.5;
+  filter: Alpha(opacity=50); /* IE8 and earlier */
+	}
+	h9{
+		color: #f40808;
+		font-size: 150px;
+		position: absolute; right:230px; top: -480px;
+		opacity: 0.5;
+  filter: Alpha(opacity=50); /* IE8 and earlier */
+	}
+	h10{
+		color: #f40808;
+		font-size: 150px;
+		position: absolute; right:450px; top: -220px;
+		letter-spacing:-30px;
+		opacity: 0.5;
+  filter: Alpha(opacity=50); /* IE8 and earlier */
+	}
+	h11{
+		color: black;
+		font-size: 25px;
+		position: absolute; right:414px; top: -1344px;
+		 text-align:left;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+
+			font-weight: bold; 
+	}
+	h12{
+		color: black;
+		font-size: 25px;
+		position: absolute; right:-85px; top: -900px;
+		 text-align: center;
+		word-spacing: -1px;
+			font-weight: 200; text-transform: capitalize;
+		 padding: 10px;
+  width: 200px;
+  height: 0px
+	}
+	h13{
+		color: black;
+		font-size: 25px;
+		position: absolute; right:180px; top: -1140px;
+		 text-align: center;
+		word-spacing: -1px;
+		font-weight: 200;
+	 text-transform: capitalize;
+  padding: 10px;
+  width: 200px;
+  height: 0px;}
+	h14{	color: black;
+		font-size: 25px;
+		position: absolute; right:460px; top: -930px;
+		 text-align: center;
+		word-spacing: -1px;
+		font-weight: 200;
+	 text-transform: capitalize;
+  padding: 10px;
+  width: 200px;
+  height: 0px;}
+	h16{color: black;
+		font-size: 25px;
+		position: absolute; right:360px; top: -580px;
+		 text-align: center;
+		word-spacing: -1px;
+		font-weight: 200;
+	 text-transform: capitalize;
+  padding: 10px;
+  width: 200px;
+  height: 0px;
+	}
+	h17{color: black;
+		font-size: 25px;
+		position: absolute; right:130px; top: -800px;
+		 text-align: center;
+		word-spacing: -1px;
+		font-weight: 200;
+	 text-transform: capitalize;
+  padding: 10px;
+  width: 200px;
+  height: 0px;
+	}
+	h18{
+		color: black;
+		font-size: 25px;
+		position: absolute; right:-190px; top: -550px;
+		 text-align: center;
+		word-spacing: -1px;
+		font-weight: 200;
+	 text-transform: capitalize;
+  padding: 10px;
+  width: 200px;
+  height: 0px;
+	}
+	h19{
+		color: black;
+		font-size: 25px;
+		position: absolute; right:-170px; top: -442px;
+		 text-align: center;
+		word-spacing: -1px;
+		font-weight: 200;
+	 text-transform: capitalize;
+  padding: 10px;
+  width: 200px;
+  height: 0px;
+	}
+	h20{
+		color: black;
+		font-size: 25px;
+		position: absolute; right:40px; top: -300px;
+		 text-align: center;
+		word-spacing: -1px;
+		font-weight: 200;
+	 text-transform: capitalize;
+  padding: 10px;
+  width: 200px;
+  height: 0px;
+	}
+	h21{
+		color: black;
+		font-size: 25px;
+		position: absolute; right:280px; top: -450px;
+		 text-align: center;
+		word-spacing: -1px;
+		font-weight: 200;
+	 text-transform: capitalize;
+  padding: 10px;
+  width: 200px;
+  height: 0px;
+	}
+	h22{
+		color: black;
+		font-size: 25px;
+		position: absolute; right:506px; top: -230px;
+		 text-align: center;
+		word-spacing: -1px;
+		font-weight: 200;
+	 text-transform: capitalize;
+  padding: 10px;
+  width: 200px;
+  height: 0px;
+	}
+	h23{ color: black;
+		font-size: 50px;
+		position: absolute; right:-150px; top: -30px;
+		 text-align:left;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+			font-weight: bold;
+		
+	}
+	.line{
+		width: 3px;
+		height: 260px;
+		background-color: #13337a;
+		position: relative; right: 150px ; bottom: 1160px;
+		border-bottom-right-radius: 2px;
+		border-bottom-left-radius: 2px;
+	}
+	.line2{
+		width: 3px;
+		height: 260px;
+		background-color: #13337a;
+		position: relative; right: 410px ; bottom: 1350px;
+		border-top-right-radius: 2px;
+		border-top-left-radius: 2px;
+	}
+	.line3{
+		width: 3px;
+		height: 260px;
+		background-color: #13337a;
+		position: relative; right: 90px ; bottom: 1350px;
+		border-bottom-right-radius: 2px;
+		border-bottom-left-radius: 2px;
+	}
+	.line4{
+		width: 3px;
+		height: 260px;
+		background-color: #13337a;
+		position: relative; right: 380px ; bottom: 1500px;
+		border-top-right-radius: 2px;
+		border-top-left-radius: 2px;
+	}
+	.line5{
+		width: 3px;
+		height: 240px;
+		background-color: #13337a;
+		position: relative; right: 30px ; bottom: 1520px;
+		border-bottom-right-radius: 2px;
+		border-bottom-left-radius: 2px;
+	}
+	.line6{
+		width: 3px;
+		height: 250px;
+		background-color: #13337a;
+		position: relative; right: 250px ; bottom: 1700px;
+		border-top-right-radius: 2px;
+		border-top-left-radius: 2px;
+	}
+	.line7{
+		width: 3px;
+		height: 220px;
+		background-color: #13337a;
+		position: relative; right: 480px ; bottom: 2000px;
+		border-bottom-right-radius: 2px;
+		border-bottom-left-radius: 2px;
+	}
+	.rectangle {
+  height: 50px;
+  width: 790.5px;
+  background-color: #13337a;
+  position: relative; left: 10%; top: 12%;
+  border-top-left-radius: 50px;
+border-bottom-left-radius: 50px;
+	border-top-right-radius: 20px;
+	}
+		.rectangle2 {
+  height: 300px;
+  width: 50px;
+  background-color: #13337a;
+  position: relative; right: -92.3%; top: 12%; bottom: inherit;
+	}
+	.rectangle3 {
+  height: 50px;
+  width: 824px;
+  background-color: #13337a;
+  position: relative; right: -6.3%; top: 12%;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	}
+		.rectangle4 {
+  height: 300px;
+  width: 50px;
+  background-color: #13337a;
+  position: relative; left: 6.3%; top: 12%; bottom: inherit;
+	}
+	.rectangle5{
+  height: 50px;
+  width: 845px;
+  background-color: #13337a;
+  position: relative; right: -6.3%; top: 12%;
+	border-bottom-left-radius: 10px;
+	}
+	.rectangle6 {
+  height: 50px;
+  width: 650.5px;
+  background-color: #13337a;
+  position: relative; left: 27.8%; top: 29%;
+  border-top-left-radius: 10px;
+	}
+		.rectangle7 {
+  height: 150px;
+  width: 50px;
+  background-color: #13337a;
+  position: relative; left: 27.8%; top: 28.5%; bottom: inherit;
+	}
+		.rectangle8{
+  height: 50px;
+  width: 415.5px;
+  background-color: #13337a;
+  position: relative; left: 27.8%; top: 27%;
+  border-bottom-left-radius: 10px;
+	}
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 50px solid #13337a;
+	border-bottom: 25px solid transparent;
+	position: relative; left: 74%; top: 23.4%;
+}
+</style>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form name="poster">
+<div id="Space">
+	<div class="rectangle">
+	</div>
+	<div class="rectangle2">
+	</div>
+	<div class="rectangle3">
+	</div>
+	<div class="rectangle4">
+	</div>
+	<div class="rectangle5">
+	</div>
+	<div class="rectangle6">
+	</div>
+	<div class="rectangle7">
+	</div>
+	<div class="rectangle8">
+	</div>
+	<div class="triangle-right">
+	<div class="line">
+	</div>
+	<div class="line2">
+	</div>
+	<div class="line3">
+	</div>
+	<div class="line4">
+	</div>
+	<div class="line5">
+	</div>
+	<div class="line6">
+	</div>
+	<div class="line7">
+	</div>
+	<h1>1</h1>
+		<h2>2</h2>
+		<h3>3</h3>
+		<h4>4</h4>
+		<h5>5</h5>
+		<h6>6</h6>
+		<h7>7</h7>
+		<h8>8</h8>
+		<h9>9</h9>
+		<h10>10</h10>
+		<h11>Dieter Rams:     
+			10 Principles for Good Design</h11>
+		<h12>Good design is innovative</h12>
+		<h13>Good design makes a product useful</h13>
+		<h14>Good design is aesthetic
+</h14>
+		<h16>Good design makes a product understandable
+</h16>
+		<h17>Good design is unobtrusive
+</h17>
+		<h18>Good design is honest
+</h18>
+		<h19>Good design is
+long-lasting</h19>
+		<h20>Good design is thorough down to the last detail</h20>
+		<h21>Good design is
+environmentally-friendly</h21>
+		<h22>Good design is as little design as possible
+</h22>
+		<h23>end</h23>
+		<p>Rams approach on how good design is projected as innovative is a clear indication that design must be versatile and adaptable. That the design process itself should change if the use or practice of that particular product is forever evolving to amend with the user or world around it 
+</p>
+		<p2>A “useful” product is seen to be emphasized as you first encounter it. Rams believes there should be no second guessing  or questions asked when you pick up or use a product. The function and purpose of that particular product should speak louder than appearance. </p2>
+		<p3>Almost stemming from the last principle, good design can be aesthetically pleasing through how easily the product is worked, accessed, approached, etc. </p3>
+		<p4>Rams also speaks on how good design is a product that can speak to the user and almost guide them towards the goal at hand.</p4>
+		<p5>The ideal that a product  shouldn’t apply flash or a mood from its display but rather restrain from the element of art or another outside element that will prolong it fulfilling its purpose.</p5>
+		<p6>I truly understand that Good design  is to the point. When using a product or method, it shouldn’t be cryptic but direct. This principle speaks volumes to me due to have severe it is to understand an object especially machines or tools that cause harm to the user unless its function and purpose is up front.</p6>
+		<p7>A good aspect of a product should never be trend able or fashionable by todays means. At the same time it shouldn’t be outdated or deemed obsolete. This has to the most difficult principle to achieve due to how you must find the in-between of being useless and vogue. </p7>
+		<p8>Rams sees that detail comes with great responsibility. That any extra shape, color, appendage should be accounted for within the design of the product. That anything with no purpose prolongs the user.</p8>
+		<p9>Good design is “pro-green”, that the perfect product's utilization and exists shouldn’t harm the environment. </p9>
+		<p10>Purity and simplicity go a long way. Not much design or thought into your product will allow the user to keen on the important aspect of what they’re getting into when it comes to approaching your product. </p10>
+		<p11>Dieter Ram’s approach on appearance and overall design is a good sum of how each “property” can further a product’s function, look, and perspective. He thinks about the everyday person and how they would match up against objects that will make life more painless. He also keeps in mind that these properties can be a good structure to lean on when someone is enduring the design process. </p11>
+</div>
+</div>
+</form>
+</body>
+</html>
