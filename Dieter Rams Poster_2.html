@@ -1,60 +1,361 @@
 <!doctype html>
 <html>
 <head>
+<div class="test"><h>Dieter Rams:     
+			10 Principles for Good Design </h>
+	</div>
 <style>
-	.box1{
-		width: 900px;
-		height: 150px;
-		background: orange;
-        transition: 1s;
-		position:fixed;
-		border-top-right-radius: 10px;
-		border-top-left-radius: 10px;
+	body{
+		background: #222222;
+		padding-top:  100px;
+	}
+	.poster{
+		width: 1000px;
+		height: 9080px;
+		background: #222222;
+		margin-top: 100px;
+		position: 10%;
+	}
+	@media only screen and (max-width: 900px){
+	.poster{
+		width: 500px;
+		height: 4540px;
+		background: #222222;
+		margin-top: 100px;
+		position: 10%;
+	}
+	}
+	.test{
+		width: 1000px;
+		position: fixed;
+		background: #222222;
+		text-align: center;
+		text-transform: uppercase;
+		
+	}
+	@media only screen and (max-width: 800px){
+			.test{
+		width: 500px;
+		position: fixed;
+		background: #222222;
+		text-align: center;
+		text-transform: uppercase;
+		
+	}
+	}
+	h{
 		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-		font-weigh: bold;
-		color: black;
-	    font-size:60px;
-		text-align:left;
-		text-transform:uppercase;
-		word-spacing: 1px;
+		color: white;
+		margin-right: 1000px;
+		font-size: 250%;
 	}
-	.div{
-		font-size:60px;
+	.page{
+		width: 500px;
+		height: 135px;
+		background: #222222;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 240%;
 		text-align:center;
-		text-transform:uppercase;
-		word-spacing: 10px;
+		text-transform: uppercase; 
+		font-display: block;
+		letter-spacing: 1px;
+		color: white;
 	}
-#Space{
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		height: 1400.5px;
-		width: 900px;
-		background: #bfbbbb;
-		margin: 0 auto;
-		border-radius: 10px;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		display: block;
-        position: relative; left: 0%; top: 4%;
+	.page2{width: 1000px;
+		height: 135px;
+		background: #222222;}
+	.box{
+		width: 500px;
+		color:white;
+		padding:50px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		background: #222222;
+    margin: 0px 40px;
+    transition: 1s;
+
 	}
-	form{
-		background: #bfbbbb;
-		margin: 4px;
-		height: 1500px;
+	.box:hover{
+		transform: scale(1.3);
+		background:  #C67817;
+		z-index: 2;
+		box-shadow: 2px 2px 2px #000;
+	}
+	h2{	color: #DEFF00;
+		font-size: 200px;
+		transition: 1s;
+  opacity: 0.5;
+  filter: Alpha(opacity=50); /* IE8 and earlier */
+	}
+	.box2{
+		width: 500px;
+		color:white;
+		padding:50px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		background: #222222;
+    margin: 0px 500px;
+    transition: 1s;
+	}
+	.box2:hover{
+		transform: scale(1.3);
+		background: #C67817;
+		z-index: 2;
+		box-shadow: 2px 2px 2px #000;
+	}
+	h4{	color: #DEFF00;
+		font-size: 100px;
+  opacity: 0.5;
+  filter: Alpha(opacity=50); /* IE8 and earlier */
+	}
+	.box3{
+		width: 500px;
+		color:white;
+		padding:50px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		background: #222222;
+    margin: 0px 40px;
+    transition: 1s;
+
+	}
+	.box3:hover{
+		transform: scale(1.3);
+		background: #C67817;
+		z-index: 2;
+		box-shadow: 2px 2px 2px #000;
+	}
+	h6{	color: #DEFF00;
+		font-size: 100px;
+		transition: 1s;
+  opacity: 0.5;
+  filter: Alpha(opacity=50); /* IE8 and earlier */
+	}
+	.box4{
+		width: 500px;
+		color:white;
+		padding:50px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		background: #222222;
+    margin: 0px 500px;
+    transition: 1s;
+	text-indent: 50px;
+	}
+	.box4:hover{
+		transform: scale(1.3);
+		background: #C67817;
+		z-index: 2;
+		box-shadow: 2px 2px 2px #000;
+	}
+	h8{	color:#DEFF00;
+		font-size: 200px;
+  opacity: 0.5;
+  filter: Alpha(opacity=50); /* IE8 and earlier */
+	}
+	.box5{
+		width: 500px;
+		color:white;
+		padding:50px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		background:#222222;
+    margin: 0px 40px;
+    transition: 1s;
+	text-indent: 220px;
+
+	}
+	.box5:hover{
+		transform: scale(1.3);
+		background: #C67817;
+		z-index: 2;
+		box-shadow: 2px 2px 2px #000;
+	}
+	h10{	color: #DEFF00;
+		font-size: 100px;
+		transition: 1s;
+  opacity: 0.5;
+  filter: Alpha(opacity=50); /* IE8 and earlier */
+	}
+	.box6{
+		width: 500px;
+		color:white;
+		padding:50px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		background: #222222;
+    margin: 0px 500px;
+    transition: 1s;
+	text-indent: 50px;
+	}
+	.box6:hover{
+		transform: scale(1.3);
+		background: #C67817;
+		z-index: 2;
+		box-shadow: 2px 2px 2px #000;
+	}
+	h12{	color: #DEFF00;
+		font-size: 200px;
+  opacity: 0.5;
+  filter: Alpha(opacity=50); /* IE8 and earlier */
+	}
+	.box7{
+		width: 500px;
+		color:white;
+		padding:50px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		background: #222222;
+    margin: 0px 40px;
+    transition: 1s;
+	text-indent: 250px;
+
+	}
+	.box7:hover{
+		transform: scale(1.3);
+		background: #C67817;
+		z-index: 2;
+		box-shadow: 2px 2px 2px #000;
+	}
+	h14{	color: #DEFF00;
+		font-size: 90px;
+		transition: 1s;
+  opacity: 0.5;
+  filter: Alpha(opacity=50); /* IE8 and earlier */
+	}
+	.box8{
+		width: 500px;
+		color:white;
+		padding:50px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		background: #222222;
+    margin: 0px 500px;
+    transition: 1s;
+	text-indent: 50px;
+	}
+	.box8:hover{
+		transform: scale(1.3);
+		background: #C67817;
+		z-index: 2;
+		box-shadow: 2px 2px 2px #000;
+	}	
+	h16{	color: #DEFF00;
+		font-size: 200px;
+  opacity: 0.5;
+  filter: Alpha(opacity=50); /* IE8 and earlier */
+	}
+	.box9{
+		width: 500px;
+		color:white;
+		padding:50px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		background: #222222;
+    margin: 0px 40px;
+    transition: 1s;
+	text-indent: 450px;
+
+	}
+	.box9:hover{
+		transform: scale(1.3);
+		background: #C67817;
+		z-index: 2;
+		box-shadow: 2px 2px 2px #000;
+	}
+	h18{	color: #DEFF00;
+		font-size: 400px;
+		transitio  opacity: 0.5;
+  filter: Alpha(opacity=50); /* IE8 and earlier */
+	}
+	.box10{
+		width: 500px;
+		color:white;
+		padding:50px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		background: #222222;
+    margin: 0px 500px;
+    transition: 1s;
+	text-indent: 90px;
+	}
+	.box10:hover{
+		transform: scale(1.3);
+		background: #C67817;
+		z-index: 2;
+		box-shadow: 2px 2px 2px #000;
+	}
+	h19{	color: #DEFF00;
+		font-size: 400px;
+  opacity:   filter: Alpha(opacity=70); /* IE8 and earlier */
+	}
+	.box11{
+		width: 500px;
+		color:white;
+		padding:50px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		background: #222222;
+    margin: 0px 30px;
+    transition: 1s;
+	text-indent: 50px;
+	}
+	.box11:hover{
+		transform: scale(1.3);
+		background: #C67817;
+		z-index: 2;
+		box-shadow: 2px 2px 2px #000;
+		
+	}
+	h21{	color: #DEFF00;
+		font-size: 200px;
+		text-transform: uppercase;
+  opacity: 0.5;
+  filter: Alpha(opacity=50); /* IE8 and earlier */
 	}
 </style>
 <meta charset="UTF-8">
 <title>Untitled Document</title>
 </head>
-
 <body>
-<form name="poster">
-<div id="Space">
-	<div class="box1">
-	<h>Dieter Rams:     
-			10 Principles for Good Design</h>
-		
+<div class="test"><h>Dieter Rams:     
+			10 Principles for Good Design </h>
+	</div>
+<form class="poster">
+<div class="box">
+<h1>Good design is innovative</h1><h2>1</h2>
+<p>Rams approach on how good design is projected as innovative is a clear indication that design must be versatile and adaptable. That the design process itself should change if the use or practice of that particular product is forever evolving to amend with the user or world around it.</p>
 </div>
-
+<div class="box2">
+<h3>Good design makes a product useful</h3><h4>2</h4>
+<p>A “useful” product is seen to be emphasized as you first encounter it. Rams believes there should be no second guessing  or questions asked when you pick up or use a product. The function and purpose of that particular product should speak louder than appearance.</p>
+</div>
+<div class="box3">
+<h5>Good design is aesthetic</h5><h6>3</h6>
+<p>Almost stemming from the last principle, good design can be aesthetically pleasing through how easily the product is worked, accessed, approached, etc.</p>
+</div>
+<div class="box4">
+<h7>Good design makes a product understandable</h7><h8>4</h8>
+<p>Rams also speaks on how good design is a product that can speak to the user and almost guide them towards the goal at hand.</p>
+</div>
+<div class="box5">
+<h10>5</h10><h9>Good design is unobtrusive</h9>
+<p>The ideal that a product  shouldn’t apply flash or a mood from its display but rather restrain from the element of art or another outside element that will prolong it fulfilling its purpose.</p>
+</div>
+<div class="box6">
+<h12>6</h12><h11>Good design is honest</h11>
+<p>I truly understand that Good design  is to the point. When using a product or method, it shouldn’t be cryptic but direct. This principle speaks volumes to me due to have severe it is to understand an object especially machines or tools that cause harm to the user unless its function and purpose is up front.</p>
+</div>
+<div class="box7">
+<h13>Good design islong-lasting</h13><h14>7</h14>
+<p>A good aspect of a product should never be trend able or fashionable by todays means. At the same time it shouldn’t be outdated or deemed obsolete. This has to the most difficult principle to achieve due to how you must find the in-between of being useless and vogue.</p>
+</div>
+<div class="box8">
+<h16>8</h16> <h15>Good design is through down to the last detail</h15>
+<p>Rams sees that detail comes with great responsibility. That any extra shape, color, appendage should be accounted for within the design of the product. That anything with no purpose prolongs the user.</p>
+	</div>
+<div class="box9">
+<h18>9</h18>
+<h17>Good design is environmentally-friendly</h17>
+<p>Good design is “pro-green”, that the perfect product's utilization and exists shouldn’t harm the environment.</p>
+</div>
+<div class="box10">
+<h19>10</h19> <h20>Good design is as little design as possible</h20>
+<p>Purity and simplicity go a long way. Not much design or thought into your product will allow the user to keen on the important aspect of what they’re getting into when it comes to approaching your product.</p>
+</div>
+<div class="box11">
+<h21>epilogue</h21>
+<p>Dieter Ram’s approach on appearance and overall design is a good sum of how each “property” can further a product’s function, look, and perspective. He thinks about the everyday person and how they would match up against objects that will make life more painless. He also keeps in mind that these properties can be a good structure to lean on when someone is enduring the design process.</p>
+</div>
+</form>
 </body>
 </html>
